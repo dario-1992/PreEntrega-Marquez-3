@@ -1,7 +1,27 @@
-.formulario {
-    display: flex;
-    justify-content: center;
-    background-color: #0d6efd;
+.titulo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: yellow;
+  color: black;
+  padding: 3rem;
+
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: black;
+  color: yellow;
+  border-radius: 100rem;
+  padding: 3rem;
+  font-size: xx-large;
   
-  }
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
   
+}

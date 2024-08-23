@@ -1,3 +1,4 @@
+{% extends "Registro/padre.html" %}  {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{% url 'buscar' %}" method="GET">
+    {% block contenidoQueCambia %}
+    <link href="{%static "registro/css/estilo.css"%}" rel="stylesheet" />
+
+    <form class="titulo" action="{% url 'buscar' %}" method="GET">
+        <h3>Busca un nombre de cliente</h3>
         <input type="text" name="nombre" id ="nombre">
         <input type="submit" value="Buscar">
     </form>
+    {% endblock %} 
     
 </body>
 </html>
